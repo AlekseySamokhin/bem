@@ -1,3 +1,10 @@
+@color-black: black;
+@color-green: green;
+@color-grey: grey;
+@color-blue: blue;
+@color-red: red;
+@color-white: #f1f1f1;
+
 * {
 	padding: 0;
 	margin: 0;
@@ -99,20 +106,20 @@ body {
 
 	&__text {
 		max-width: 688px;
-		color: #868585;
+		color: @color-grey;
 		font-size: 14px;
 		font-weight: 300;
 		text-align: center;
 		line-height: 25.89px;
 		margin: 0px auto;
 		&-red {
-			color: red;
+			color: @color-red;
 		}
 		&-green {
-			color: green;
+			color: @color-green;
 		}
 		&-black {
-			color: blue;
+			color: @color-blue;
 		}
 	}
 	&__row {
@@ -145,7 +152,7 @@ body {
 		bottom: 0;
 		height: 1px;
 		left: 50%;
-		background-color: #000;
+		background-color: @color-black;
 		margin: 0px 0px 0px -25px;
 	}
 }
@@ -156,7 +163,7 @@ body {
 		border-radius: 50%;
 		width: 92px;
 		height: 92px;
-		border: 2px solid #f1f1f1;
+		border: 2px solid @color-white;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -170,7 +177,7 @@ body {
 
 	&__title {
 		text-align: center;
-		color: #000000;
+		color: @color-black;
 		font-size: 22px;
 		text-transform: uppercase;
 		letter-spacing: 3.52px;
@@ -179,21 +186,21 @@ body {
 
 	&__text {
 		text-align: center;
-		color: #868585;
+		color: @color-grey;
 		line-height: 26px;
 		font-weight: 300;
 		font-size: 14px;
 	}
 
 	&__text-blue {
-		color: blue;
+		color: @color-blue;
 	}
 
 	&__text-green {
-		color: green;
+		color: @color-green;
 	}
 
 	&__text-red {
-		color: red;
+		color: @color-red;
 	}
 }
